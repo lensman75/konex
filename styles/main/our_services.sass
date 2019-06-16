@@ -15,6 +15,14 @@
   position: absolute
   border: 2px solid white
 
+%our_services_square
+  position: absolute
+  bottom: 0
+  width: 7vw
+  height: 7vw
+  background: red
+  opacity: 0.5
+
 #our_services
   margin-top: 2%
   margin-bottom: 5%
@@ -48,6 +56,10 @@
         .border_line
           @extend %our_services_border_line
 
+        .square
+          @extend %our_services_square
+
+
 
     .what_we_do:nth-of-type(2)
       width: 100%
@@ -64,6 +76,9 @@
         .border_line
           @extend %our_services_border_line
 
+        .square
+          @extend %our_services_square
+
     .what_we_do:nth-of-type(3)
       width: 100%
       background: url("../images/arseny.jpg") no-repeat center
@@ -78,6 +93,9 @@
 
         .border_line
           @extend %our_services_border_line
+
+        .square
+          @extend %our_services_square
 
 
 
@@ -95,3 +113,6 @@
 
         .border_line
           @extend %our_services_border_line
+
+        .square
+          @extend %our_services_square

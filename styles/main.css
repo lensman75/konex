@@ -17,6 +17,15 @@
   border: 2px solid white;
 }
 
+#our_services #our_services_cards .what_we_do:nth-of-type(4) .border_text .square, #our_services #our_services_cards .what_we_do:nth-of-type(3) .border_text .square, #our_services #our_services_cards .what_we_do:nth-of-type(2) .border_text .square, #our_services #our_services_cards .what_we_do:nth-of-type(1) .border_text .square {
+  position: absolute;
+  bottom: 0;
+  width: 7vw;
+  height: 7vw;
+  background: red;
+  opacity: 0.5;
+}
+
 #our_services {
   margin-top: 2%;
   margin-bottom: 5%;
@@ -82,12 +91,55 @@
   margin-bottom: 0;
   width: 80%;
 }
+footer {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer #contact_us {
+  width: 85%;
+  height: 85%;
+  background: #EDEDED;
+  display: grid;
+  grid-template-rows: 25% 75%;
+}
+footer #contact_us #address_phone_worktime {
+  padding-top: 3%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+footer #contact_us #address_phone_worktime h3 {
+  color: #BC9633;
+  font-size: 1.4vw;
+}
+footer #contact_us #address_phone_worktime p {
+  margin-bottom: 0;
+  font-size: 1vw;
+}
+footer #copyright {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer #copyright p {
+  font-size: 1.3vw;
+  margin-bottom: 0;
+}
+
 html body #main_body #main_page #main_page_wrapper #control input {
   width: 150px;
   height: 50px;
 }
 
-html body #main_body #our_advantages h2, html body #main_body #about_us h2, #our_services #our_services_header h2 {
+html body #main_body #our_advantages h2, html body #main_body #about_us h2, #our_services #our_services_header h2, footer #contact_us h2 {
   text-transform: uppercase;
   color: #1C829C;
   padding: 1.5% 0 1.5% 15%;
@@ -112,7 +164,7 @@ html body #main_body #our_advantages #our_advantages_background .card_background
   text-align: center;
   padding-left: 10%;
   padding-right: 10%;
-  font-size: 19px;
+  font-size: 1.2vw;
 }
 
 html {
@@ -141,6 +193,7 @@ html body header img {
 }
 html body header h1 {
   padding-left: calc(1% + 150px + 1%);
+  font-size: 2.3vw;
   color: #FFFFFF;
   background: #6AD1EB;
   line-height: 60px;
@@ -176,9 +229,9 @@ html body #main_body #main_page #main_page_wrapper p {
   color: #6AD1EB;
 }
 html body #main_body #main_page #main_page_wrapper #control {
-  width: 35%;
+  width: 60%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 html body #main_body #main_page #main_page_wrapper #control input {
   background: #6AD1EB;
@@ -355,11 +408,6 @@ html body #main_body #call_us #call_us_main p {
 html body #main_body #call_us #call_us_button {
   grid-row: 3;
   place-self: center;
-}
-html body #main_body footer {
-  width: 100%;
-  height: 25%;
-  background: lime;
 }
 
 /*# sourceMappingURL=main.css.map */
