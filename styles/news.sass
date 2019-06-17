@@ -1,0 +1,199 @@
+@import "news/new_two_first"
+@import main/contact_us_footer.sass
+
+//variables
+//color
+$blue: #6AD1EB
+$white: #FFFFFF
+$yellow: #FFDD85
+
+//sizes
+$body_padding: 12%
+$logo_size: 150px
+$h2_color: #1C829C
+
+//mixin
+%input_button
+  width: 150px
+  height: 50px
+
+%h2
+  text-transform: uppercase
+  color: $h2_color
+  padding: 1.5% 0 1.5% 15%
+  margin-bottom: 0
+
+%our_advantages_left_card
+  display: grid
+  grid-template-columns: 30% auto
+
+%our_advantages_right_card
+  display: grid
+  grid-template-columns: auto 30%
+
+%our_advantages_cards_paragraph
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  text-align: center
+  padding-left: 10%
+  padding-right: 10%
+  font-size: 1.2vw
+
+@media (min-width: 576px)
+
+
+@media (min-width: 768px)
+
+
+@media (min-width: 992px)
+
+
+@media (min-width: 1200px)
+html
+  width: 100%
+  height: 100%
+  body
+    width: 100%
+    height: 100%
+    padding-left: $body_padding
+    padding-right: $body_padding
+
+    header
+      position: relative
+      width: 100%
+
+
+      img
+        position: absolute
+        height: $logo_size
+        width: $logo_size
+        margin-left: 1%
+        border: 1px solid cornflowerblue
+        background: cornflowerblue
+        border-bottom-left-radius: 15%
+        border-bottom-right-radius: 15%
+        z-index: 1
+
+      h1
+        padding-left: calc(1% + #{$logo_size} + 1%)
+        font-size: 2vw
+        color: $white
+        background: $blue
+        line-height: 60px
+        margin-bottom: 0
+
+      #custom_nav
+        padding: 0 0 0 calc(1% + #{$logo_size} + 1%)
+        line-height: 50px
+        font-size: 1.5vw
+        div ul
+          width: 100%
+          display: grid
+          $ttt: calc(100% / 6)
+          grid-template-columns: repeat(6, $ttt)
+          li
+            width: 100%
+            height: 100%
+            text-align: center
+            a
+              color: black
+          li:nth-of-type(2)
+            background: $blue
+            a
+              color: white
+
+    #main_body
+      width: 100%
+      height: calc(100% - 66px - 60px)
+
+      #main_page
+        height: 100%
+        width: 100%
+        background: url("../images/main_first.jpg") no-repeat
+        display: grid
+        grid-template-columns: 25% auto
+
+        #main_page_wrapper
+          grid-column-start: 2
+          background: rgba(255, 255, 255, 0.7)
+          display: flex
+          flex-direction: column
+          justify-content: center
+          padding-left: 10%
+          //align-items: center
+
+          p
+            font-size: 1.5vw
+            font-style: italic
+            color: $blue
+
+          #control
+            width: 100%
+            display: flex
+            //justify-content: space-between
+
+            input
+              @extend %input_button
+              background: $blue
+              border: none
+              font-size: 24px
+              margin-right: 10%
+
+            input:nth-of-type(2)
+              background: #FFDD85
+              border: 0
+
+      #call_us
+        margin: 0 15% 0 15%
+        width: 70%
+        height: 30%
+        background: #EDEDED
+        display: grid
+        grid-template-rows: calc(100% / 3) calc(100% / 3) calc(100% / 3)
+
+        div:nth-of-type(1)
+          grid-row: 1
+          align-self: end
+          justify-self: center
+          color: $blue
+          font-size: 1.4vw
+          p
+            margin: 0
+
+        #call_us_main
+          grid-row: 2
+          position: relative
+          display: flex
+          flex-direction: column
+          justify-content: center
+          align-items: center
+
+          #call_us_line
+            width: 100%
+            height: 10%
+            background: $blue
+            position: absolute
+
+
+          p
+            margin: 0
+            font-size: 2.5vw
+            position: absolute
+            z-index: 100
+            background: #EDEDED
+            padding-left: 3vw
+            padding-right: 3vw
+
+
+        #call_us_button
+          grid-row: 3
+          place-self: center
+
+      hr
+        margin: 3% 4% 3% 4%
+        border: 2px solid black
+
+      #contact_us
+        width: 100%
