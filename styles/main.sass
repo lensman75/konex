@@ -24,14 +24,10 @@ $h2_color: #1C829C
   margin-bottom: 0
 
 %our_advantages_left_card
-  //margin: 5%
-  //border: 1px solid black
   display: grid
   grid-template-columns: 30% auto
 
 %our_advantages_right_card
-  //margin: 5%
-  //border: 1px solid black
   display: grid
   grid-template-columns: auto 30%
 
@@ -41,10 +37,8 @@ $h2_color: #1C829C
   justify-content: center
   align-items: center
   text-align: center
-  //padding: 15%
   padding-left: 10%
   padding-right: 10%
-  //font-size: 19px
   font-size: 1.2vw
 
 @media (min-width: 576px)
@@ -70,6 +64,7 @@ html
       position: relative
       width: 100%
 
+
       img
         position: absolute
         height: $logo_size
@@ -79,19 +74,35 @@ html
         background: cornflowerblue
         border-bottom-left-radius: 15%
         border-bottom-right-radius: 15%
+        z-index: 1
 
       h1
         padding-left: calc(1% + #{$logo_size} + 1%)
-        font-size: 2.3vw
+        font-size: 2vw
         color: $white
         background: $blue
         line-height: 60px
         margin-bottom: 0
 
-      nav
-        padding-left: calc(1% + #{$logo_size} + 1%)
+      #custom_nav
+        padding: 0 0 0 calc(1% + #{$logo_size} + 1%)
         line-height: 50px
-        font-size: 28px
+        font-size: 1.5vw
+        div ul
+          width: 100%
+          display: grid
+          $ttt: calc(100% / 6)
+          grid-template-columns: repeat(6, $ttt)
+          li
+            width: 100%
+            height: 100%
+            text-align: center
+            a
+              color: black
+          li:nth-of-type(1)
+            background: $blue
+            a
+              color: white
 
     #main_body
       width: 100%
@@ -110,23 +121,25 @@ html
           display: flex
           flex-direction: column
           justify-content: center
-          align-items: center
+          padding-left: 10%
+          //align-items: center
 
           p
-            font-size: 22px
+            font-size: 1.5vw
             font-style: italic
             color: $blue
 
           #control
-            width: 60%
+            width: 100%
             display: flex
-            justify-content: space-between
+            //justify-content: space-between
 
             input
               @extend %input_button
               background: $blue
               border: none
               font-size: 24px
+              margin-right: 10%
 
             input:nth-of-type(2)
               background: #FFDD85
@@ -136,7 +149,6 @@ html
 
       #about_us
         width: 100%
-        //height: 70%
 
         h2
           @extend %h2
@@ -243,7 +255,7 @@ html
 
           .card_border
             margin: 5%
-            border: 2px solid black
+            border: 2px solid white
 
         #our_advantages_background
           z-index: 8000
@@ -255,46 +267,47 @@ html
           grid-template-rows: calc(95% / 2) auto
           grid-column-gap: 3%
           grid-row-gap: 5%
+          color: white
 
           .card_background:nth-of-type(1)
             @extend %our_advantages_left_card
 
             #card_background_one
-              background: rgba(172, 230, 0, 0.2)
+              background: rgba(255, 221, 133, 0.2)
 
             #card_background_two
-              background: rgba(172, 230, 0, 1)
+              background: rgba(255, 221, 133, 1)
               @extend %our_advantages_cards_paragraph
 
           .card_background:nth-of-type(2)
             @extend %our_advantages_right_card
 
             #card_background_three
-              background: rgba(172, 230, 0, 1)
+              background: rgba(188, 150, 51, 1)
               @extend %our_advantages_cards_paragraph
 
             #card_background_four
-              background: rgba(172, 230, 0, 0.2)
+              background: rgba(188, 150, 51, 0.2)
 
           .card_background:nth-of-type(3)
             @extend %our_advantages_left_card
 
             #card_background_five
-              background: rgba(172, 230, 0, 0.2)
+              background: rgba(106, 209, 235, 0.2)
 
             #card_background_six
-              background: rgba(172, 230, 0, 1)
+              background: rgba(106, 209, 235, 1)
               @extend %our_advantages_cards_paragraph
 
           .card_background:nth-of-type(4)
             @extend %our_advantages_right_card
 
             #card_background_seven
-              background: rgba(172, 230, 0, 1)
+              background: rgba(28, 130, 156, 1)
               @extend %our_advantages_cards_paragraph
 
             #card_background_eight
-              background: rgba(172, 230, 0, 0.2)
+              background: rgba(28, 130, 156, 0.2)
 
 
       #call_us

@@ -1,221 +1,226 @@
 <!DOCTYPE html>
 <html lang = "en">
 <head>
-  <meta charset = "UTF-8">
-  <title>Konex</title>
-  
-  <link rel = "stylesheet" href = "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity = "sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin = "anonymous">
-  
-  <script src = "https://code.jquery.com/jquery-3.3.1.slim.min.js"
-          integrity = "sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-          crossorigin = "anonymous"></script>
-  <script src = "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-          integrity = "sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-          crossorigin = "anonymous"></script>
-  <script src = "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-          integrity = "sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-          crossorigin = "anonymous"></script>
-  <link rel = "stylesheet" href = "styles/main.css">
-  <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <meta charset = "UTF-8">
+    <title>Konex</title>
+    
+    <link crossorigin = "anonymous" href = "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity = "sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel = "stylesheet">
+    
+    <script crossorigin = "anonymous"
+            integrity = "sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            src = "https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script crossorigin = "anonymous"
+            integrity = "sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            src = "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script crossorigin = "anonymous"
+            integrity = "sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            src = "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <meta content = "width=device-width, initial-scale=1.0" name = "viewport">
+    <link href = "styles/main.css" rel = "stylesheet">
 </head>
 <body>
-  <header>
-    <img src = "images/logo%20-%20Google%20Search.png" alt = "Logo">
-    <h1>ЛЕЧЕБНО-ДИАГНОСТИЧЕСКИЙ ЦЕНТР «КОНЕКС»</h1>
-    <nav>
-      <ul class = "nav nav-pills nav-justified">
-        <li class = "nav-item">
-          <a class = "nav-link active" href = "#">Главная</a>
-        </li>
-        <li class = "nav-item">
-          <a class = "nav-link" href = "#">Новости</a>
-        </li>
-        <li class = "nav-item">
-          <a class = "nav-link" href = "#">Услуги</a>
-        </li>
-        <li class = "nav-item">
-          <a class = "nav-link" href = "#">Прайс</a>
-        </li>
-        <li class = "nav-item">
-          <a class = "nav-link" href = "#">Отзывы</a>
-        </li>
-        <li class = "nav-item">
-          <a class = "nav-link" href = "#">Контакты</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <section id="main_body">
-    <section id = "main_page">
-      <div id = "main_page_wrapper">
-        <h3>ЛЕЧЕБНО- ДИАГНОСТИЧЕСКИЙ ЦЕНТР «КОНЕКС»</h3>
-        <p>Мы несем полную ответственность за вашу красоту и здоровье!</p>
-        <div id = "control">
-          <input class = "btn btn-primary" type = "button" value = "Услуги">
-          <input class = "btn btn-primary" type = "button" value = "Запись">
-        </div>
-      </div>
-    </section>
+    <header>
+        <img alt = "Logo" src = "images/logo%20-%20Google%20Search.png">
+        <h1>ЛЕЧЕБНО-ДИАГНОСТИЧЕСКИЙ ЦЕНТР «КОНЕКС»</h1>
+        <nav class = "navbar navbar-expand-lg navbar-light bg-light" id="custom_nav">
+            <div class = "collapse navbar-collapse" id = "navbarSupportedContent">
+                <ul class = "navbar-nav mr-auto">
+                    <li class = "nav-item active">
+                        <a class = "nav-link" href = "#">Главная<span class = "sr-only">(current)</span></a>
+                    </li>
+                    <li class = "nav-item">
+                        <a class = "nav-link" href = "#">Новости</a>
+                    </li>
+                    <li class = "nav-item">
+                        <a class = "nav-link" href = "#">Услуги</a>
+                    </li>
+                    <li class = "nav-item">
+                        <a class = "nav-link" href = "#">Прайс</a>
+                    </li>
+                    <li class = "nav-item">
+                        <a class = "nav-link" href = "#">Отзывы</a>
+                    </li>
+                    <li class = "nav-item">
+                        <a class = "nav-link" href = "#">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
     
-    <section id = "about_us">
-      <h2>о нас</h2>
-      <div id = "about_us_wrapper">
-          <div id = "about_us_content">
-            <p>
-              Здоровье и красота – это залог успешной и гармоничной жизни.
-              Именно с этой целью 7 лет назад был создан Лечебно – диагностический Центр «Конекс».
-            </p>
-            <p>Все представляемые наши услуги соответствуют самым строгим мировым критериям качества.</p>
-          </div>
-          <div></div>
-      </div>
+    <section id = "main_body">
+        <section id = "main_page">
+            <div id = "main_page_wrapper">
+                <h3>ЛЕЧЕБНО- ДИАГНОСТИЧЕСКИЙ ЦЕНТР «КОНЕКС»</h3>
+                <p>Мы несем полную ответственность за вашу красоту и здоровье!</p>
+                <div id = "control">
+                    <input class = "btn btn-primary" type = "button" value = "Услуги">
+                    <input class = "btn btn-primary" type = "button" value = "Запись">
+                </div>
+            </div>
+        </section>
+        
+        <section id = "about_us">
+            <h2>о нас</h2>
+            <div id = "about_us_wrapper">
+                <div id = "about_us_content">
+                    <p>
+                        Здоровье и красота – это залог успешной и гармоничной жизни.
+                        Именно с этой целью 7 лет назад был создан Лечебно – диагностический Центр «Конекс».
+                    </p>
+                    <p>Все представляемые наши услуги соответствуют самым строгим мировым критериям качества.</p>
+                </div>
+                <div></div>
+            </div>
+        </section>
+        
+        <section id = "our_advantages">
+            
+            <h2>наши преимущества</h2>
+            
+            <div id = "our_advantages_wrapper">
+                <div class = "our_advantages_card">
+                    <div id = "card_one"></div>
+                    <div id = "card_two">
+                    
+                    </div>
+                </div>
+                <div class = "our_advantages_card">
+                    <div id = "card_three">
+                    
+                    </div>
+                    <div id = "card_four"></div>
+                </div>
+                <div class = "our_advantages_card">
+                    <div id = "card_five"></div>
+                    <div id = "card_six">
+                    
+                    </div>
+                </div>
+                <div class = "our_advantages_card">
+                    <div id = "card_seven">
+                    
+                    </div>
+                    <div id = "card_eight"></div>
+                </div>
+            </div>
+            
+            <div id = "our_advantages_border">
+                <div class = "card_border"></div>
+                <div class = "card_border"></div>
+                <div class = "card_border"></div>
+                <div class = "card_border"></div>
+            </div>
+            
+            <div id = "our_advantages_background">
+                <div class = "card_background">
+                    <div id = "card_background_one"></div>
+                    <div id = "card_background_two">
+                        <p>Уникальные индивидуальные программы омолаживания, которые гарантирует оптимальные результаты при максимальной безопасности
+                            и наименьших затратах времени и средств.</p>
+                    </div>
+                </div>
+                <div class = "card_background">
+                    <div id = "card_background_three">
+                        <p>Высочайшая квалификация, огромный практический опыт наших специалистов – это гарантия профессиональный ответственности и
+                            полной безопасности медицинских процедур в Центре.</p>
+                    </div>
+                    <div id = "card_background_four"></div>
+                </div>
+                <div class = "card_background">
+                    <div id = "card_background_five"></div>
+                    <div id = "card_background_six">
+                        <p>Это обоснованная стоимость медицинских и косметологических услуг.</p>
+                    </div>
+                </div>
+                <div class = "card_background">
+                    <div id = "card_background_seven">
+                        <p>Удобное время визита, комфорт и отсутствие очередей.</p>
+                    </div>
+                    <div id = "card_background_eight"></div>
+                </div>
+            </div>
+        
+        </section>
+        
+        <section id = "call_us">
+            <div><p>Если вы хотите быть красивым и молодым, обратитесь к нам</p></div>
+            <div id = "call_us_main">
+                <p>ЗАПИСЬ ПО ТЕЛЕФОНУ</p>
+                <div id = "call_us_line"></div>
+            </div>
+            <div id = "call_us_button"><input class = "btn btn-primary" type = "button" value = "Записаться на приём"></div>
+        </section>
+        
+        <section id = "our_services">
+            <div id = "our_services_header">
+                <h2>наши услуги</h2>
+            </div>
+            <div id = "our_services_cards">
+                <div class = "what_we_do">
+                    <div class = "border_text">
+                        <p>Общая хирургия</p>
+                        <div class = "border_line"></div>
+                        <div class = "square"></div>
+                    </div>
+                
+                </div>
+                <div class = "what_we_do">
+                    <div class = "border_text">
+                        <p>Пластическая хирургия</p>
+                        <div class = "border_line"></div>
+                        <div class = "square"></div>
+                    </div>
+                
+                </div>
+                <div class = "what_we_do">
+                    <div class = "border_text">
+                        <p>Дерматохирургия</p>
+                        <div class = "border_line"></div>
+                        <div class = "square"></div>
+                    </div>
+                
+                </div>
+                <div class = "what_we_do">
+                    <div class = "border_text">
+                        <p>Амбулаторная урология</p>
+                        <div class = "border_line"></div>
+                        <div class = "square"></div>
+                    </div>
+                
+                </div>
+            </div>
+        </section>
+        
+        <footer>
+            <section id = "contact_us">
+                <h2>наши контакты</h2>
+                <div id = "address_phone_worktime">
+                    <div id = "address">
+                        <h3>Адрес</h3>
+                        <p>г.Винница</p>
+                        <p>ул.Соборная 84.</p>
+                    </div>
+                    <div id = "phone">
+                        <h3>Телефон</h3>
+                        <p>56-28-10</p>
+                        <p>35-43-88</p>
+                        <p>067-433-52-56</p>
+                    </div>
+                    <div id = "worktime">
+                        <h3>Режим работы</h3>
+                        <p>Пн.-Пт. 9:00-20:00</p>
+                        <p>Суб.-Вс. 10:00-15:00</p>
+                    </div>
+                </div>
+            </section>
+            <section id = "copyright">
+                <p>Copyright © 2019 ЛЕЧЕБНО-ДИАГНОСТИЧЕСКИЙ ЦЕНТР «КОНЕКС»</p>
+            </section>
+        </footer>
     </section>
-    
-    <section id = "our_advantages">
-      
-      <h2>наши преимущества</h2>
-      
-      <div id = "our_advantages_wrapper">
-        <div class = "our_advantages_card">
-          <div id = "card_one"></div>
-          <div id = "card_two">
 
-          </div>
-        </div>
-        <div class = "our_advantages_card">
-          <div id = "card_three">
 
-          </div>
-          <div id = "card_four"></div>
-        </div>
-        <div class = "our_advantages_card">
-          <div id = "card_five"></div>
-          <div id = "card_six">
-          
-          </div>
-        </div>
-        <div class = "our_advantages_card">
-          <div id = "card_seven">
-          
-          </div>
-          <div id = "card_eight"></div>
-        </div>
-      </div>
-      
-      <div id="our_advantages_border">
-        <div class = "card_border"></div>
-        <div class = "card_border"></div>
-        <div class = "card_border"></div>
-        <div class = "card_border"></div>
-      </div>
-      
-      <div id="our_advantages_background">
-        <div class = "card_background">
-          <div id = "card_background_one"></div>
-          <div id = "card_background_two">
-            <p>Уникальные индивидуальные программы омолаживания, которые гарантирует оптимальные результаты при максимальной безопасности и наименьших затратах времени и средств.</p>
-          </div>
-        </div>
-        <div class = "card_background">
-          <div id = "card_background_three">
-            <p>Высочайшая квалификация, огромный практический опыт наших специалистов – это гарантия профессиональный ответственности и полной безопасности медицинских процедур в Центре.</p>
-          </div>
-          <div id = "card_background_four"></div>
-        </div>
-        <div class = "card_background">
-          <div id = "card_background_five"></div>
-          <div id = "card_background_six">
-            <p>Это обоснованная стоимость медицинских и косметологических услуг.</p>
-          </div>
-        </div>
-        <div class = "card_background">
-          <div id = "card_background_seven">
-            <p>Удобное время визита, комфорт и отсутствие очередей.</p>
-          </div>
-          <div id = "card_background_eight"></div>
-        </div>
-      </div>
-      
-    </section>
-    
-    <section id = "call_us">
-      <div><p>Если вы хотите быть красивым и молодым, обратитесь к нам</p></div>
-      <div id="call_us_main">
-        <p>ЗАПИСЬ ПО ТЕЛЕФОНУ</p>
-        <div id="call_us_line"></div>
-      </div>
-      <div id="call_us_button"><input class = "btn btn-primary" type = "button" value = "Записаться на приём"></div>
-    </section>
-
-    <section id = "our_services">
-      <div id="our_services_header">
-        <h2>наши услуги</h2>
-      </div>
-      <div id="our_services_cards">
-        <div class = "what_we_do">
-          <div class="border_text">
-            <p>Общая хирургия</p>
-            <div class="border_line"></div>
-            <div class="square"></div>
-          </div>
-          
-        </div>
-        <div class = "what_we_do">
-          <div class="border_text">
-            <p>Пластическая хирургия</p>
-            <div class="border_line"></div>
-            <div class="square"></div>
-          </div>
-          
-        </div>
-        <div class = "what_we_do">
-          <div class="border_text">
-            <p>Дерматохирургия</p>
-            <div class="border_line"></div>
-            <div class="square"></div>
-          </div>
-          
-        </div>
-        <div class = "what_we_do">
-          <div class="border_text">
-            <p>Амбулаторная урология</p>
-            <div class="border_line"></div>
-            <div class="square"></div>
-          </div>
-          
-        </div>
-      </div>
-    </section>
-    
-    <footer>
-      <section id="contact_us">
-        <h2>наши контакты</h2>
-        <div id="address_phone_worktime">
-          <div id = "address">
-            <h3>Адрес</h3>
-            <p>г.Винница</p>
-            <p>ул.Соборная 84.</p>
-          </div>
-          <div id = "phone">
-            <h3>Телефон</h3>
-            <p>56-28-10</p>
-            <p>35-43-88</p>
-            <p>067-433-52-56</p>
-          </div>
-          <div id = "worktime">
-            <h3>Режим работы</h3>
-            <p>Пн.-Пт. 9:00-20:00</p>
-            <p>Суб.-Вс. 10:00-15:00</p>
-          </div>
-        </div>
-      </section>
-      <section id="copyright">
-        <p>Copyright © 2019 ЛЕЧЕБНО-ДИАГНОСТИЧЕСКИЙ ЦЕНТР «КОНЕКС»</p>
-      </section>
-    </footer>
-  </section>
-  
-  
 </body>
 </html>
