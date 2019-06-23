@@ -1,3 +1,46 @@
+footer {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer #contact_us {
+  width: 85%;
+  height: 85%;
+  background: #EDEDED;
+  display: grid;
+  grid-template-rows: 25% 75%;
+}
+footer #contact_us #address_phone_worktime {
+  padding-top: 3%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+footer #contact_us #address_phone_worktime h3 {
+  color: #BC9633;
+  font-size: 1.4vw;
+}
+footer #contact_us #address_phone_worktime p {
+  margin-bottom: 0;
+  font-size: 1vw;
+}
+footer #copyright {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer #copyright p {
+  font-size: 1.3vw;
+  margin-bottom: 0;
+}
+
 html {
   width: 100%;
   height: 100%;
@@ -58,7 +101,7 @@ html body header #custom_nav div ul li:nth-of-type(2) a {
 html body #onenews_main {
   margin-top: 4%;
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 html body #onenews_main #go_back {
   width: 100%;
@@ -66,26 +109,59 @@ html body #onenews_main #go_back {
 html body #onenews_main #go_back p {
   font-size: 1.5vw;
 }
-html body #onenew_article {
+html body #onenews_main #onenews_main_header {
+  width: 100%;
+  height: 25%;
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+html body #onenews_main #onenews_main_header #header_picture {
   width: 100%;
   height: 100%;
+  background: url("../images/alexandru-zdrobau-98438-unsplash.jpg") no-repeat top;
+  background-size: contain;
 }
-html body #onenew_article #pic1 {
-  float: left;
-  margin-right: 3%;
-  width: 35%;
-  height: 25%;
-  background: url("../images/alexandru-zdrobau-98438-unsplash.jpg") no-repeat center;
-  background-size: cover;
+html body #onenews_main #onenews_main_header #header_text {
+  margin: 0 3% 0 3%;
 }
-html body #onenew_article #pic2 {
-  margin-top: 30%;
-  float: right;
-  margin-left: 3%;
-  width: 35%;
+html body #onenews_main #onenews_main_header #header_text p:nth-of-type(2) {
+  font-size: 1.3vw;
+}
+html body #onenews_main #onenews_main_text {
+  width: 100%;
+  height: auto;
+}
+html body #onenews_main #onenews_main_text .text_without_pic {
+  font-size: 1.3vw;
+}
+html body #onenews_main #onenews_main_text .main_text_right_picture {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 60% 40%;
   height: 25%;
-  background: url("../images/cesar-la-rosa-1341520-unsplash.jpg") no-repeat center;
-  background-size: cover;
+}
+html body #onenews_main #onenews_main_text .main_text_right_picture .right_pic_text {
+  font-size: 1.3vw;
+}
+html body #onenews_main #onenews_main_text .main_text_right_picture .right_pic_pic {
+  background: url("../images/alexandru-zdrobau-98438-unsplash.jpg") no-repeat top;
+  background-size: contain;
+}
+html body #onenews_main #onenews_main_text p {
+  font-size: 1.3vw;
+}
+html body #control_next_previous_page {
+  width: 100%;
+  height: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+html body #control_next_previous_page p {
+  color: #1C829C;
+  font-size: 1.3vw;
+}
+html body #control_next_previous_page p i {
+  color: purple;
 }
 
 /*# sourceMappingURL=onenews.css.map */

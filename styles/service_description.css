@@ -1,0 +1,226 @@
+h2 {
+  font-weight: normal;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+html body {
+  width: 100%;
+  height: 100%;
+  padding-left: 12%;
+  padding-right: 12%;
+}
+html body header {
+  position: relative;
+  width: 100%;
+}
+html body header img {
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  margin-left: 1%;
+  border: 1px solid cornflowerblue;
+  background: cornflowerblue;
+  border-bottom-left-radius: 15%;
+  border-bottom-right-radius: 15%;
+  z-index: 1;
+}
+html body header h1 {
+  padding-left: calc(1% + 150px + 1%);
+  font-size: 2vw;
+  color: #FFFFFF;
+  background: #6AD1EB;
+  line-height: 60px;
+  margin-bottom: 0;
+}
+html body header #custom_nav {
+  padding: 0 0 0 calc(1% + 150px + 1%);
+  line-height: 50px;
+  font-size: 1.5vw;
+}
+html body header #custom_nav div ul {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(6, calc(100% / 6));
+}
+html body header #custom_nav div ul li {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+html body header #custom_nav div ul li a {
+  color: black;
+}
+html body header #custom_nav div ul li:nth-of-type(3) {
+  background: #6AD1EB;
+}
+html body header #custom_nav div ul li:nth-of-type(3) a {
+  color: white;
+}
+html body #goback {
+  margin-top: 3%;
+  margin-left: 1%;
+}
+html body #goback p {
+  font-size: 1.3vw;
+  font-weight: lighter;
+  color: #918F8F;
+}
+html body #goback i {
+  color: black;
+  margin-right: 5px;
+}
+html body #one_service_article {
+  margin: 1%;
+}
+html body #one_service_article #first_part {
+  display: flex;
+  flex-direction: row;
+}
+html body #one_service_article #first_part #first_part_pic {
+  width: 300px;
+  height: 170px;
+  background: url("../images/aiony-haust-667712-unsplash.jpg") no-repeat center;
+  background-size: cover;
+}
+html body #one_service_article #first_part #first_part_text {
+  margin-left: 2%;
+  max-height: 170px;
+}
+html body #one_service_article #first_part #first_part_text h2 {
+  margin-bottom: 2%;
+  color: #1C829C;
+  font-weight: normal;
+}
+html body #one_service_article #first_part #first_part_text p {
+  font-size: 1.1vw;
+}
+html body #rest_of_text {
+  width: 100%;
+  height: fit-content;
+}
+html body #rest_of_text img {
+  width: 300px;
+  height: 170px;
+  float: right;
+  margin: 0 0 5px 15px;
+  object-fit: cover;
+  object-position: 50% 75%;
+}
+html body #rest_of_text p {
+  font-size: 1.1vw;
+  text-align: justify;
+}
+html body #prev_next_service_article {
+  margin: 2% 1%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+html body #prev_next_service_article p {
+  color: #1C829C;
+  font-size: 1.3vw;
+}
+html body #prev_next_service_article p i {
+  margin: 0 5px;
+  color: black;
+}
+html body #call_us_block {
+  width: 70%;
+  height: 20%;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 5%;
+  background: #EDEDED;
+  display: grid;
+  grid-template-rows: calc(100% / 3) calc(100% / 3) calc(100% / 3);
+  grid-template-columns: calc(100% / 3) calc(100% / 3) calc(100% / 3);
+}
+html body #call_us_block #call_us_slogan {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+html body #call_us_block #call_us_slogan p {
+  margin-bottom: 0;
+  color: #1C829C;
+}
+html body #call_us_block #call_us_header {
+  grid-column: 1/4;
+  grid-row: 2/3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+html body #call_us_block #call_us_header h2 {
+  margin-bottom: 0;
+  text-align: center;
+  background: #EDEDED;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  z-index: 1;
+  padding-right: 2%;
+  padding-left: 2%;
+}
+html body #call_us_block #call_us_header .blue_line {
+  width: 100%;
+  height: 15%;
+  background: #6AD1EB;
+  position: absolute;
+}
+html body #call_us_block #call_us_button {
+  grid-row: 3/4;
+  grid-column: 1/end;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+html body #call_us_block #call_us_button input {
+  background: #1C829C;
+  border: #1C829C;
+  width: 50%;
+  height: 75%;
+  color: white;
+  font-size: 1.5vw;
+}
+html body footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 4%;
+}
+html body footer #contact_us {
+  margin-bottom: 1%;
+  padding: 1%;
+  background-color: #EDEDED;
+}
+html body footer #contact_us h2 {
+  text-transform: uppercase;
+  color: #1C829C;
+  margin-left: 20%;
+  margin-bottom: 2%;
+}
+html body footer #contact_us #address_phone_worktime {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+html body footer #contact_us #address_phone_worktime h3 {
+  color: #BC9633;
+}
+html body footer #contact_us #address_phone_worktime p {
+  margin: 0;
+}
+html body footer #copyright {
+  text-align: center;
+}
+
+/*# sourceMappingURL=service_description.css.map */

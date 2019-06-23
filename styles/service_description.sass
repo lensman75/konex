@@ -1,0 +1,213 @@
+//variables
+//color
+$blue: #6AD1EB
+$white: #FFFFFF
+$yellow: #FFDD85
+
+//sizes
+$body_padding: 12%
+$logo_size: 150px
+$h2_color: #1C829C
+
+@media (min-width: 576px)
+
+
+@media (min-width: 768px)
+
+
+@media (min-width: 992px)
+
+
+@media (min-width: 1200px)
+h2
+  font-weight: normal
+html
+  width: 100%
+  height: 100%
+  body
+    width: 100%
+    height: 100%
+    padding-left: $body_padding
+    padding-right: $body_padding
+    
+    
+    
+    header
+      position: relative
+      width: 100%
+      
+      
+      img
+        position: absolute
+        height: $logo_size
+        width: $logo_size
+        margin-left: 1%
+        border: 1px solid cornflowerblue
+        background: cornflowerblue
+        border-bottom-left-radius: 15%
+        border-bottom-right-radius: 15%
+        z-index: 1
+      
+      h1
+        padding-left: calc(1% + #{$logo_size} + 1%)
+        font-size: 2vw
+        color: $white
+        background: $blue
+        line-height: 60px
+        margin-bottom: 0
+      
+      #custom_nav
+        padding: 0 0 0 calc(1% + #{$logo_size} + 1%)
+        line-height: 50px
+        font-size: 1.5vw
+        div ul
+          width: 100%
+          display: grid
+          $ttt: calc(100% / 6)
+          grid-template-columns: repeat(6, $ttt)
+          li
+            width: 100%
+            height: 100%
+            text-align: center
+            a
+              color: black
+          li:nth-of-type(3)
+            background: $blue
+            a
+              color: white
+    #goback
+      margin-top: 3%
+      margin-left: 1%
+      p
+        font-size: 1.3vw
+        font-weight: lighter
+        color: #918F8F
+      i
+        color: black
+        margin-right: 5px
+      
+    #one_service_article
+      margin: 1%
+      #first_part
+        display: flex
+        flex-direction: row
+        #first_part_pic
+          width: 300px
+          height: 170px
+          background: url("../images/aiony-haust-667712-unsplash.jpg") no-repeat center
+          background-size: cover
+        #first_part_text
+          margin-left: 2%
+          max-height: 170px
+          h2
+            margin-bottom: 2%
+            color: #1C829C
+            font-weight: normal
+          p
+            font-size: 1.1vw
+    #rest_of_text
+      width: 100%
+      height: fit-content
+      img
+        width: 300px
+        height: 170px
+        float: right
+        margin: 0 0 5px 15px
+        object-fit: cover
+        object-position: 50% 75%
+      p
+        font-size: 1.1vw
+        text-align: justify
+    
+    #prev_next_service_article
+      margin: 2% 1%
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      p
+        color: #1C829C
+        font-size: 1.3vw
+        i
+          margin: 0 5px
+          color: black
+    
+    #call_us_block
+      width: 70%
+      height: 20%
+      margin-left: 15%
+      margin-right: 15%
+      margin-bottom: 5%
+      background: #EDEDED
+      display: grid
+      grid-template-rows: calc(100% / 3) calc(100% / 3) calc(100% / 3)
+      grid-template-columns: calc(100% / 3) calc(100% / 3) calc(100% / 3)
+      #call_us_slogan
+        grid-column-start: 1
+        grid-column-end: 4
+        text-align: center
+        display: flex
+        flex-direction: column
+        justify-content: flex-end
+        align-items: center
+        p
+          margin-bottom: 0
+          color: #1C829C
+      #call_us_header
+        grid-column: 1 / 4
+        grid-row: 2 / 3
+        display: flex
+        flex-direction: column
+        justify-content: center
+        position: relative
+        h2
+          margin-bottom: 0
+          text-align: center
+          background: #EDEDED
+          display: flex
+          margin-right: auto
+          margin-left: auto
+          z-index: 1
+          padding-right: 2%
+          padding-left: 2%
+        .blue_line
+          width: 100%
+          height: 15%
+          background: #6AD1EB
+          position: absolute
+      #call_us_button
+        grid-row: 3 / 4
+        grid-column: 1 / end
+        display: flex
+        flex-direction: row
+        justify-content: center
+        input
+          background: #1C829C
+          border: #1C829C
+          width: 50%
+          height: 75%
+          color: white
+          font-size: 1.5vw
+    footer
+      width: 100%
+      display: flex
+      flex-direction: column
+      margin-top: 4%
+      #contact_us
+        margin-bottom: 1%
+        padding: 1%
+        background-color: #EDEDED
+        h2
+          text-transform: uppercase
+          color: #1C829C
+          margin-left: 20%
+          margin-bottom: 2%
+        #address_phone_worktime
+          display: flex
+          flex-direction: row
+          justify-content: space-between
+          h3
+            color: #BC9633
+          p
+            margin: 0
+      #copyright
+        text-align: center

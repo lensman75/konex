@@ -1,0 +1,168 @@
+h2 {
+  font-weight: normal;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+html body {
+  width: 100%;
+  height: 100%;
+  padding-left: 12%;
+  padding-right: 12%;
+}
+html body header {
+  position: relative;
+  width: 100%;
+}
+html body header img {
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  margin-left: 1%;
+  border: 1px solid cornflowerblue;
+  background: cornflowerblue;
+  border-bottom-left-radius: 15%;
+  border-bottom-right-radius: 15%;
+  z-index: 1;
+}
+html body header h1 {
+  padding-left: calc(1% + 150px + 1%);
+  font-size: 2vw;
+  color: #FFFFFF;
+  background: #6AD1EB;
+  line-height: 60px;
+  margin-bottom: 0;
+}
+html body header #custom_nav {
+  padding: 0 0 0 calc(1% + 150px + 1%);
+  line-height: 50px;
+  font-size: 1.5vw;
+}
+html body header #custom_nav div ul {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(6, calc(100% / 6));
+}
+html body header #custom_nav div ul li {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+html body header #custom_nav div ul li a {
+  color: black;
+}
+html body header #custom_nav div ul li:nth-of-type(3) {
+  background: #6AD1EB;
+}
+html body header #custom_nav div ul li:nth-of-type(3) a {
+  color: white;
+}
+html body #short_intro {
+  margin-top: 3%;
+  padding: 2% 10%;
+  background: #1C829C;
+}
+html body #short_intro p:nth-of-type(1) {
+  font-size: 1.1vw;
+  color: #6AD1EB;
+  font-style: italic;
+}
+html body #short_intro p:nth-of-type(2) {
+  font-size: 1.1vw;
+  color: #FFFFFF;
+}
+html body #short_intro h2 {
+  color: #FFFFFF;
+}
+html body #services_header h2 {
+  color: #1C829C;
+  margin: 3% 0 3% 20%;
+}
+html body .service_title {
+  width: 100%;
+  height: 10%;
+  display: grid;
+  grid-template-columns: 1% 17% 82%;
+}
+html body .service_title #back_color_1 {
+  background: #FFDD85;
+}
+html body .service_title #service_1 {
+  background: url("../images/arseny.jpg") no-repeat;
+  background-size: cover;
+}
+html body .service_title .service_name {
+  color: #BC9633;
+  padding-left: 2%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+html body .service_title #back_color_2 {
+  background: #BC9633;
+}
+html body .service_title #service_2 {
+  background: url("../images/max-rovensky-667694-unsplash.jpg") no-repeat;
+  background-size: cover;
+}
+html body .service_title #back_color_3 {
+  background: #6AD1EB;
+}
+html body .service_title #service_3 {
+  background: url("../images/cesar-la-rosa-1341520-unsplash.jpg") no-repeat;
+  background-size: cover;
+}
+html body .service_title #back_color_4 {
+  background: #1C829C;
+}
+html body .service_title #service_4 {
+  background: url("../images/max-rovensky-667694-unsplash.jpg") no-repeat;
+  background-size: cover;
+}
+html body .service_title .service_name h2 {
+  text-transform: uppercase;
+}
+html body .service_title_divider {
+  width: 100%;
+  height: 6%;
+  display: flex;
+}
+html body .service_title_divider .divider_line {
+  margin: auto;
+  width: 95%;
+  border: 2px solid #1C829C;
+}
+html body footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 4%;
+}
+html body footer #contact_us {
+  margin-bottom: 1%;
+  padding: 1%;
+  background-color: #EDEDED;
+}
+html body footer #contact_us h2 {
+  text-transform: uppercase;
+  color: #1C829C;
+  margin-left: 20%;
+  margin-bottom: 2%;
+}
+html body footer #contact_us #address_phone_worktime {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+html body footer #contact_us #address_phone_worktime h3 {
+  color: #BC9633;
+}
+html body footer #contact_us #address_phone_worktime p {
+  margin: 0;
+}
+html body footer #copyright {
+  text-align: center;
+}
+
+/*# sourceMappingURL=services_short.css.map */
