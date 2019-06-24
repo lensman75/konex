@@ -1,0 +1,230 @@
+//variables
+//color
+$blue: #6AD1EB
+$white: #FFFFFF
+$yellow: #FFDD85
+
+//sizes
+$body_padding: 12%
+$logo_size: 150px
+$h2_color: #1C829C
+
+@media (min-width: 576px)
+
+
+@media (min-width: 768px)
+
+
+@media (min-width: 992px)
+
+
+@media (min-width: 1200px)
+h2
+  font-weight: normal
+html
+  width: 100%
+  height: 100%
+  body
+    width: 100%
+    height: 100%
+    padding-left: $body_padding
+    padding-right: $body_padding
+    
+    
+    
+    header
+      position: relative
+      width: 100%
+      
+      
+      img
+        position: absolute
+        height: $logo_size
+        width: $logo_size
+        margin-left: 1%
+        border: 1px solid cornflowerblue
+        background: cornflowerblue
+        border-bottom-left-radius: 15%
+        border-bottom-right-radius: 15%
+        z-index: 1
+      
+      h1
+        padding-left: calc(1% + #{$logo_size} + 1%)
+        font-size: 2vw
+        color: $white
+        background: $blue
+        line-height: 60px
+        margin-bottom: 0
+      
+      #custom_nav
+        padding: 0 0 0 calc(1% + #{$logo_size} + 1%)
+        line-height: 50px
+        font-size: 1.5vw
+        div ul
+          width: 100%
+          display: grid
+          $ttt: calc(100% / 6)
+          grid-template-columns: repeat(6, $ttt)
+          li
+            width: 100%
+            height: 100%
+            text-align: center
+            a
+              color: black
+          li:nth-of-type(4)
+            background: $blue
+            a
+              color: white
+    
+    #short_intro
+      margin-top: 3%
+      padding: 2% 10%
+      background: #1C829C
+      p:nth-of-type(1)
+        font-size: 1.1vw
+        color: #6AD1EB
+        font-style: italic
+      p:nth-of-type(2)
+        font-size: 1.1vw
+        color: #FFFFFF
+      h2
+        color: #FFFFFF
+    
+    #price_action_switcher
+      width: 100%
+      height: 8%
+      display: grid
+      grid-template-columns: 50% 50%
+      margin-bottom: 2%
+      #price
+        background: white
+        display: flex
+        justify-content: center
+        align-items: center
+        h2
+          margin-bottom: 0
+          font-weight: normal
+          color: #1C829C
+      #action
+        background: #1C829C
+        display: flex
+        justify-content: center
+        align-items: center
+        h2
+          margin-bottom: 0
+          font-weight: normal
+          color: white
+    
+    
+    #services_header
+      h2
+        color: #1C829C
+        margin: 3% 0 3% 20%
+    
+    
+    .service_title
+      width: 100%
+      height: 10%
+      
+      display: grid
+      grid-template-columns: 1% 17% 82%
+      #back_color_1
+        background: #FFDD85
+      #service_1
+        background: url("../images/arseny.jpg") no-repeat
+        background-size: cover
+      .service_name
+        color: black
+        font-size: 1.1vw
+        padding-left: 2%
+        margin-top: auto
+        margin-bottom: auto
+    
+    #open_service
+      width: 100%
+      margin-top: 2%
+      table
+        width: 100%
+        border: none
+        border-collapse: collapse
+        table-layout: fixed
+        colgroup
+          width: 100%
+          .eighty
+            width: 80%
+          .twenty
+            width: 20%
+        td
+          font-size: 1.5vw
+          padding-left: 2%
+          color: #1C829C
+        .under_section
+          font-weight: lighter
+          padding-left: 4%
+    //li
+    //  font-size: 1.1vw
+    //  color: #1C829C
+    //  margin: 0 0 1% 10%
+    //#first_level_list
+    //  list-style: none
+    //  #second_level_list
+    //    list-style: none
+    //    font-weight: lighter
+    
+    .service_title
+      #back_color_2
+        background: #BC9633
+      #service_2
+        background: url("../images/max-rovensky-667694-unsplash.jpg") no-repeat
+        background-size: cover
+    
+    .service_title
+      #back_color_3
+        background: #6AD1EB
+      #service_3
+        background: url("../images/cesar-la-rosa-1341520-unsplash.jpg") no-repeat
+        background-size: cover
+    
+    .service_title
+      #back_color_4
+        background: #1C829C
+      #service_4
+        background: url("../images/max-rovensky-667694-unsplash.jpg") no-repeat
+        background-size: cover
+      .service_name
+        h2
+          text-transform: uppercase
+    
+    .service_title_divider
+      width: 100%
+      height: 6%
+      display: flex
+      .divider_line
+        margin: auto
+        width: 95%
+        border: 2px solid #1C829C
+    
+    footer
+      width: 100%
+      display: flex
+      flex-direction: column
+      margin-top: 4%
+      #contact_us
+        margin-bottom: 1%
+        padding: 1%
+        background-color: #EDEDED
+        h2
+          text-transform: uppercase
+          color: #1C829C
+          margin-left: 20%
+          margin-bottom: 2%
+        #address_phone_worktime
+          display: flex
+          flex-direction: row
+          justify-content: space-between
+          h3
+            color: #BC9633
+          p
+            margin: 0
+      #copyright
+        text-align: center

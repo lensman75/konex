@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <title>Action list</title>
+    
+    <link crossorigin = "anonymous"
+          href = "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity = "sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          rel = "stylesheet">
+    
+    <script crossorigin = "anonymous"
+            integrity = "sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            src = "https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script crossorigin = "anonymous"
+            integrity = "sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            src = "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script crossorigin = "anonymous"
+            integrity = "sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            src = "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
+    <meta content = "width=device-width, initial-scale=1.0" name = "viewport">
+    <link rel = "stylesheet" href = "styles/price_list.css">
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <title>Services_extended</title>
+        
+        <link crossorigin = "anonymous"
+              href = "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+              integrity = "sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+              rel = "stylesheet">
+        
+        <script crossorigin = "anonymous"
+                integrity = "sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                src = "https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script crossorigin = "anonymous"
+                integrity = "sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+                src = "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script crossorigin = "anonymous"
+                integrity = "sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+                src = "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <meta content = "width=device-width, initial-scale=1.0" name = "viewport">
+        <link rel = "stylesheet" href = "styles/action_list.css">
+    </head>
+    <body>
+        <header>
+            <img alt = "Logo" src = "images/logo%20-%20Google%20Search.png">
+            <h1>ЛЕЧЕБНО-ДИАГНОСТИЧЕСКИЙ ЦЕНТР «КОНЕКС»</h1>
+            <nav class = "navbar navbar-expand-lg navbar-light bg-light" id = "custom_nav">
+                <div class = "collapse navbar-collapse" id = "navbarSupportedContent">
+                    <ul class = "navbar-nav mr-auto">
+                        <li class = "nav-item active">
+                            <a class = "nav-link" href = "#">Главная<span
+                                    class = "sr-only">(current)</span></a>
+                        </li>
+                        <li class = "nav-item">
+                            <a class = "nav-link" href = "#">Новости</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a class = "nav-link" href = "#">Услуги</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a class = "nav-link" href = "#">Прайс</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a class = "nav-link" href = "#">Отзывы</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a class = "nav-link" href = "#">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        
+        <div id = "short_intro">
+            <p>Все косметологические процедуры, собранные в одном месте</p>
+            <h2>ЛЕЧЕБНО- ДИАГНОСТИЧЕСКИЙ ЦЕНТР «КОНЕКС»</h2>
+            <br>
+            <p>Хирургическое отделение клиники «Эстетической медицины» распологает всем необходимым
+                оборудованием и набором помещений для амбулаторного лечения больных в режиме
+                стационара
+                одного дня: смотровой кабинет хирурга, предоперационная, операционная,
+                послеоперационная
+                палата, санитарная комната, моечная и автоклавная</p>
+        </div>
+        <div id = "price_action_switcher">
+            <div id = "price"><h2>Прайс услуг</h2></div>
+            <div id = "action"><h2>Акции</h2></div>
+        </div>
+        
+        <!--        <div id = "services_header">-->
+        <!--            <h2>ПЕРЕЧЕНЬ УСЛУГ</h2>-->
+        <!--        </div>-->
+        
+        <div class = "service_title">
+            <div id = "back_color_1"></div>
+            <div class = "service_pic" id = "service_1"></div>
+            <div class = "service_name">
+                <p>С 1 мая 2019 года в нашем Центре начинаются «Счастливые часы»: в будние дни с
+                    9:00 до 13:00 посетителям предоставляется скидка 10% на целый ряд
+                    оздоровительных и косметических процедур по уходу за лицом и телом.</p>
+            </div>
+        </div>
+        
+        <!--        <div id = "open_service">-->
+        <!--            <table>-->
+        <!--                <colgroup>-->
+        <!--                    <col class="eighty">-->
+        <!--                    <col class="twenty">-->
+        <!--                </colgroup>-->
+        <!--                <tr>-->
+        <!--                    <td>Хирургия грыж</td>-->
+        <!--                    <td>от 0000 грн</td>-->
+        <!--                </tr>-->
+        <!--                <tr>-->
+        <!--                    <td colspan="2">Хирургия добокачественных новообразований подкожной-->
+        <!--                        клетчатки</td>-->
+        <!--                    &lt;!&ndash;                    <td>от 0000 грн</td>&ndash;&gt;-->
+        <!--                </tr>-->
+        <!--                <tr>-->
+        <!--                    <td class="under_section">Атерома</td>-->
+        <!--                    <td>от 0000 грн</td>-->
+        <!--                </tr>-->
+        <!--                <tr>-->
+        <!--                    <td class="under_section">Липома</td>-->
+        <!--                    <td>от 0000 грн</td>-->
+        <!--                </tr>-->
+        <!--                <tr>-->
+        <!--                    <td class="under_section">Ганглион</td>-->
+        <!--                    <td>от 0000 грн</td>-->
+        <!--                </tr>-->
+        <!--                <tr>-->
+        <!--                    <td>Оперативное лечение вросшего ногтя</td>-->
+        <!--                    <td>от 0000 грн</td>-->
+        <!--                </tr>-->
+        <!--                <tr>-->
+        <!--                    <td>Гнойная хирургия</td>-->
+        <!--                    <td>от 0000 грн</td>-->
+        <!--                </tr>-->
+        <!--            -->
+        <!--            </table>-->
+        <!--            &lt;!&ndash;            <ul id="first_level_list">&ndash;&gt;-->
+        <!--            &lt;!&ndash;                <li>Хирургия грыж</li>&ndash;&gt;-->
+        <!--            &lt;!&ndash;                <li>Хирургия доброкачественных новообразований подкожной клетчатки</li>&ndash;&gt;-->
+        <!--            &lt;!&ndash;                <ul id="second_level_list">&ndash;&gt;-->
+        <!--            &lt;!&ndash;                    <li>Атерома</li>&ndash;&gt;-->
+        <!--            &lt;!&ndash;                    <li>Липома</li>&ndash;&gt;-->
+        <!--            &lt;!&ndash;                    <li>Ганглион</li>&ndash;&gt;-->
+        <!--            &lt;!&ndash;                </ul>&ndash;&gt;-->
+        <!--            &lt;!&ndash;                <li>Оперативное лечение вросшего ногтя</li>&ndash;&gt;-->
+        <!--            &lt;!&ndash;                <li>Гнойная хирургия</li>&ndash;&gt;-->
+        <!--            &lt;!&ndash;                <li>Раны. Десмургия</li>&ndash;&gt;-->
+        <!--            &lt;!&ndash;            </ul>&ndash;&gt;-->
+        <!--            &lt;!&ndash;            <ul id="prices">&ndash;&gt;-->
+        <!--            &lt;!&ndash;                <li>от 0000 грн</li>&ndash;&gt;-->
+        <!--            &lt;!&ndash;                <li>от 0000 грн</li>&ndash;&gt;-->
+        <!--            &lt;!&ndash;                <li>от 0000 грн</li>&ndash;&gt;-->
+        <!--            &lt;!&ndash;                <li>от 0000 грн</li>&ndash;&gt;-->
+        <!--            &lt;!&ndash;                <li>от 0000 грн</li>&ndash;&gt;-->
+        <!--            &lt;!&ndash;                <li>от 0000 грн</li>&ndash;&gt;-->
+        <!--            &lt;!&ndash;                <li>от 0000 грн</li>&ndash;&gt;-->
+        <!--            &lt;!&ndash;            </ul>&ndash;&gt;-->
+        <!--        </div>-->
+        
+        <div class = "service_title_divider">
+            <div class = "divider_line"></div>
+        </div>
+        
+        <div class = "service_title">
+            <div id = "back_color_2"></div>
+            <div class = "service_pic" id = "service_2"></div>
+            <div class = "service_name">
+                <p>С 1 мая 2019 года в нашем Центре начинаются «Счастливые часы»: в будние дни с
+                    9:00 до 13:00 посетителям предоставляется скидка 10% на целый ряд
+                    оздоровительных и косметических процедур по уходу за лицом и телом.</p>
+            </div>
+        </div>
+        
+        <div class = "service_title_divider">
+            <div class = "divider_line"></div>
+        </div>
+        
+        <div class = "service_title">
+            <div id = "back_color_3"></div>
+            <div class = "service_pic" id = "service_3"></div>
+            <div class = "service_name">
+                <p>С 1 мая 2019 года в нашем Центре начинаются «Счастливые часы»: в будние дни с
+                    9:00 до 13:00 посетителям предоставляется скидка 10% на целый ряд
+                    оздоровительных и косметических процедур по уходу за лицом и телом.</p>
+            </div>
+        </div>
+        
+        <div class = "service_title_divider">
+            <div class = "divider_line"></div>
+        </div>
+        
+        <div class = "service_title">
+            <div id = "back_color_4"></div>
+            <div class = "service_pic" id = "service_4"></div>
+            <div class = "service_name">
+                <p>С 1 мая 2019 года в нашем Центре начинаются «Счастливые часы»: в будние дни с
+                    9:00 до 13:00 посетителям предоставляется скидка 10% на целый ряд
+                    оздоровительных и косметических процедур по уходу за лицом и телом.</p>
+            </div>
+        </div>
+        
+        <footer>
+            <section id = "contact_us">
+                <h2>наши контакты</h2>
+                <div id = "address_phone_worktime">
+                    <div id = "address">
+                        <h3>Адрес</h3>
+                        <p>г.Винница</p>
+                        <p>ул.Соборная 84.</p>
+                    </div>
+                    <div id = "phone">
+                        <h3>Телефон</h3>
+                        <p>56-28-10</p>
+                        <p>35-43-88</p>
+                        <p>067-433-52-56</p>
+                    </div>
+                    <div id = "worktime">
+                        <h3>Режим работы</h3>
+                        <p>Пн.-Пт. 9:00-20:00</p>
+                        <p>Суб.-Вс. 10:00-15:00</p>
+                    </div>
+                </div>
+            </section>
+            <section id = "copyright">
+                <p>Copyright © 2019 ЛЕЧЕБНО-ДИАГНОСТИЧЕСКИЙ ЦЕНТР «КОНЕКС»</p>
+            </section>
+        </footer>
+    </body>
+    </html>
+</body>
+</html>
