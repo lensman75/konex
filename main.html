@@ -61,7 +61,7 @@
             </div>
         </section>
         
-        <section id = "about_us">
+        <section class="cont" id = "about_us">
             <h2>о нас</h2>
             <div id = "about_us_wrapper">
                 <div id = "about_us_content">
@@ -75,7 +75,7 @@
             </div>
         </section>
         
-        <section id = "our_advantages">
+        <section class="cont" id = "our_advantages">
             
             <h2>наши преимущества</h2>
             
@@ -144,7 +144,7 @@
         
         </section>
         
-        <section id = "call_us">
+        <section class="cont" id = "call_us">
             <div><p>Если вы хотите быть красивым и молодым, обратитесь к нам</p></div>
             <div id = "call_us_main">
                 <p>ЗАПИСЬ ПО ТЕЛЕФОНУ</p>
@@ -153,7 +153,7 @@
             <div id = "call_us_button"><input class = "btn btn-primary" type = "button" value = "Записаться на приём"></div>
         </section>
         
-        <section id = "our_services">
+        <section class="cont" id = "our_services">
             <div id = "our_services_header">
                 <h2>наши услуги</h2>
             </div>
@@ -220,7 +220,20 @@
             </section>
         </footer>
     </section>
+    
+    <script>
+        window.onscroll = function() {myFunction()};
 
+        var header = document.getElementById("custom_nav");
+        var sticky = header.offsetTop;
 
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+    </script>
 </body>
 </html>
