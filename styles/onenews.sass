@@ -20,14 +20,19 @@ $h2_color: #1C829C
 
 
 @media (min-width: 1200px)
+
+.cont
+  padding-left: $body_padding
+  padding-right: $body_padding
+
 html
   width: 100%
   height: 100%
   body
     width: 100%
     height: 100%
-    padding-left: $body_padding
-    padding-right: $body_padding
+    //padding-left: $body_padding
+    //padding-right: $body_padding
 
     header
       position: relative
@@ -72,6 +77,10 @@ html
             background: $blue
             a
               color: white
+      .sticky
+        position: fixed
+        top: 0
+        width: 100%
 
     #onenews_main
       margin-top: 4%

@@ -54,7 +54,7 @@
         </nav>
     </header>
     
-    <section id = "onenews_main">
+    <section class="cont" id = "onenews_main">
         <div id = "go_back">
             <p><i class = "fas fa-chevron-left"></i>Вернуться назад</p>
         </div>
@@ -129,5 +129,20 @@
             <p>Copyright © 2019 ЛЕЧЕБНО-ДИАГНОСТИЧЕСКИЙ ЦЕНТР «КОНЕКС»</p>
         </section>
     </footer>
+    
+    <script>
+        window.onscroll = function() {myFunction()};
+
+        var header = document.getElementById("custom_nav");
+        var sticky = header.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+    </script>
 </body>
 </html>
