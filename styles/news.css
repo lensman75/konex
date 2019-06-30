@@ -110,6 +110,11 @@ footer #contact_us h2 {
   margin-bottom: 0;
 }
 
+.cont {
+  padding-left: 12%;
+  padding-right: 12%;
+}
+
 html {
   width: 100%;
   height: 100%;
@@ -117,8 +122,6 @@ html {
 html body {
   width: 100%;
   height: 100%;
-  padding-left: 12%;
-  padding-right: 12%;
 }
 html body header {
   position: relative;
@@ -133,7 +136,7 @@ html body header img {
   background: cornflowerblue;
   border-bottom-left-radius: 15%;
   border-bottom-right-radius: 15%;
-  z-index: 1;
+  z-index: 10000;
 }
 html body header h1 {
   padding-left: calc(1% + 150px + 1%);
@@ -147,6 +150,7 @@ html body header #custom_nav {
   padding: 0 0 0 calc(1% + 150px + 1%);
   line-height: 50px;
   font-size: 1.5vw;
+  z-index: 9999;
 }
 html body header #custom_nav div ul {
   width: 100%;
@@ -161,11 +165,16 @@ html body header #custom_nav div ul li {
 html body header #custom_nav div ul li a {
   color: black;
 }
-html body header #custom_nav div ul li:nth-of-type(2) {
+html body header #custom_nav div ul li:nth-of-type(1) {
   background: #6AD1EB;
 }
-html body header #custom_nav div ul li:nth-of-type(2) a {
+html body header #custom_nav div ul li:nth-of-type(1) a {
   color: white;
+}
+html body header .sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 html body #main_body {
   width: 100%;
